@@ -65,3 +65,40 @@ while True:
     if koodi != 4321:
         print("Väärin")
         yritykset = yritykset + 1
+
+# Milloin on seuraava karkauspäivä
+vuosialk = int(input("Vuosi: "))
+vuosiuusi = vuosialk
+while True:
+
+    vuosiuusi = vuosiuusi + 1
+
+    if vuosiuusi % 100 == 0:
+        if vuosiuusi % 400 == 0:
+            print(f"Vuotta {vuosialk} seuraava karkausvuosi on {vuosiuusi}")
+            break
+           
+    elif vuosiuusi % 4 == 0:
+        print(f"Vuotta {vuosialk} seuraava karkausvuosi on {vuosiuusi}")
+        break      
+    
+    else:
+        continue
+
+# Tarina annetuista sanoista
+sanat = ""
+edellinen_sana = ""
+while True:
+    sana = input("Anna sana: ")
+
+    if sana == "loppu":
+        break
+    
+    if sana == edellinen_sana:
+        break
+    
+    sanat += sana + " "
+
+    edellinen_sana = sana
+
+print(sanat)
