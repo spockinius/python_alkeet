@@ -102,3 +102,87 @@ while True:
     edellinen_sana = sana
 
 print(sanat)
+
+# Lukujen summa, keskiarvo ja määrä
+luku = 0
+yhteensä = 0
+yhteensä_pos = 0
+yhteensä_neg = 0
+summa = 0
+keskiarvo = 0
+while True:
+    luku = int(input("Syötä kokonaislukuja, 0 lopettaa: "))
+
+    if luku > 0:
+        yhteensä += 1
+        yhteensä_pos += 1
+    if luku < 0:
+        yhteensä += 1
+        yhteensä_neg += 1
+    
+    if luku != 0:
+        summa = summa + luku
+
+    if luku == 0:
+        break
+
+print("Syötä kokonaislukuja, 0 lopettaa:")
+print(f"Lukuja yhteensä {yhteensä}")
+print(f"Lukujen summa {summa}")
+print(f"Lukujen keskiarvo {summa/yhteensä}")
+print(f"Positiivisia {yhteensä_pos}")
+print(f"Negatiivisia {yhteensä_neg}")
+
+# Ehto silmukassa, tulosta luvut
+luku = 0
+while luku < 30 and luku % 2 == 0:
+    luku += 2
+    print(luku)
+
+# Lähtölasku
+print("Valmiina?")
+luku = int(input("Anna luku: "))
+while luku > 0:
+    print(luku)
+    luku -= 1
+print("Nyt!")
+
+# Kirjoita lukua tiettyyn pisteeseen asti
+alkluku = int(input("Mihin asti: "))
+luku = 1
+while luku != alkluku:
+    print(luku)
+    luku = luku + 1
+
+# Kahden potenssi
+asti = int(input("Mihin asti: "))
+luku = 1
+while luku <= asti:
+    print(luku)
+    luku = luku*2
+
+# Kahden potenssi muuttuvalla kertoimella
+asti = int(input("Mihin asti: "))
+kerroin = int(input("Mikä kerroin: "))
+luku = 1
+while luku <= asti:
+    print(luku)
+    luku = luku*kerroin
+
+# Kirjoita ratkaisu tähän
+asti = int(input("Mihin asti: "))
+luku = 1
+summa = 0
+
+# Peräkkäisten lukujen summa
+asti = int(input("Mihin asti: "))
+luku = 1
+summa = 0
+
+while summa < asti:
+    summa = summa + luku
+    luku = luku + 1
+
+print(summa)
+
+
