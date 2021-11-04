@@ -46,3 +46,18 @@ määrä = int(input("Leveys: "))
 arvo = "#"
 
 print(määrä*arvo)
+
+# Tähtilaatikko sanan ympärille
+sana = input("Sana: ")
+sanamäärä = len(sana)
+puolikas = len(sana)//2
+
+ekarivi = 30 * "*"
+tokarivi_alku = "*" + (14 - puolikas) * " " + sana
+tokarivi_alku_len = len(tokarivi_alku)
+tokarivi_loppu = (29 - tokarivi_alku_len) * " " + "*"
+vikarivi = 30 * "*"
+
+print(ekarivi)
+print(tokarivi_alku + tokarivi_loppu)
+print(vikarivi)
