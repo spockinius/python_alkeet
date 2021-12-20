@@ -1,0 +1,13 @@
+# Parit ympäri
+
+luku = input("Anna luku:")
+lukujono1 = -1
+lukujono2 = 0
+    
+while lukujono1 <= int(luku) or lukujono2 <= int(luku):
+    lukujono1 += 2
+    lukujono2 += 2   
+    if lukujono2 <= int(luku):
+        print(lukujono2)
+    if lukujono1 <= int(luku):
+        print(lukujono1)
